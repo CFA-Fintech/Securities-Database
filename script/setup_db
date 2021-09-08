@@ -1,0 +1,5 @@
+#!/bin/bash
+
+MYDIR="$(dirname "$(which "$0")")"
+
+$MYDIR/create_db && $MYDIR/migrate && $MYDIR/seed
